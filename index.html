@@ -42,7 +42,12 @@
                     </div>
                     <div class="navbar__bottom navbar-bottom">
                         <div class="navbar-bottom__menu-icon">
-                            <img src="./img/menu-icon.svg" alt="Menu icon" />
+                            <button>
+                                <img
+                                    src="./img/menu-icon.svg"
+                                    alt="Menu icon"
+                                />
+                            </button>
                         </div>
                         <div class="navbar-bottom__search">
                             <select name="cities" id="cities">
@@ -53,12 +58,27 @@
                             </select>
                             <div class="navbar-bottom__search-input">
                                 <input type="text" placeholder="Поиск" />
-                                <img src="./img/loupe-icon.svg" alt="Loupe" />
+                                <button>
+                                    <img
+                                        src="./img/loupe-icon.svg"
+                                        alt="Loupe"
+                                    />
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
+            <div class="menu">
+                <button><img src="./img/close-icon.svg" alt="Close" /></button>
+                <ul class="menu-list">
+                    <li><a href="#">Пункт 1</a></li>
+                    <li><a href="#">Пункт 2</a></li>
+                    <li><a href="#">Пункт 3</a></li>
+                    <li><a href="#">Пункт 4</a></li>
+                    <li><a href="#">Пункт 5</a></li>
+                </ul>
+            </div>
 
             <main class="page">
                 <div class="container">
@@ -148,8 +168,10 @@
                                                 alt="Phone"
                                             />
                                             <div>
-                                                <p>+998 71 207-XX-XX</p>
-                                                <button>Показать номер</button>
+                                                <p>+998 71 207-22-22</p>
+                                                <button data-show="true">
+                                                    Скрыть номер
+                                                </button>
                                             </div>
                                         </div>
                                         <div
@@ -174,7 +196,9 @@
                                                 src="./img/mail-icon.svg"
                                                 alt="Mail"
                                             />
-                                            <button>Показать e-mail</button>
+                                            <button data-show="false">
+                                                Показать e-mail
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="main-content__bottom-map">
@@ -190,7 +214,7 @@
                                             <option value="3">3</option>
                                         </select>
                                     </div>
-                                    <p class="">
+                                    <p>
                                         Различное профессиональное музыкальное
                                         оборудование. Бесплатная доставка
                                         музыкальных инструментов и платная –
@@ -226,5 +250,7 @@
                 </div>
             </main>
         </div>
+
+        <script src="./script.js"></script>
     </body>
 </html>
